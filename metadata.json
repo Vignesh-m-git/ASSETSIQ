@@ -1,0 +1,5 @@
+{
+  "name": "ASSETIQ",
+  "description": "An AI-powered application to extract IT asset data from HTML files into structured CSV/Excel formats using AssetIQ AI Assistant and Supabase.",
+  "requestFramePermissions": []
+}
