@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../services/supabaseClient';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Lock, Mail, Loader2, Eye, EyeOff, CheckCircle2, ShieldCheck, Zap, Database, Info, FileText, Check, X, HelpCircle } from 'lucide-react';
 
 const Login: React.FC = () => {
@@ -255,13 +255,14 @@ const Login: React.FC = () => {
                   </label>
                 </div>
 
-                <div className="text-sm flex items-center cursor-pointer">
-                  <span
-                    onClick={() => setShowHelpModal(true)}
-                    className="font-medium text-blue-600 hover:text-blue-500 flex items-center"
+
+                <div className="text-sm">
+                  <Link
+                    to="/forgot-password"
+                    className="font-medium text-blue-600 hover:text-blue-500"
                   >
-                    Need help?
-                  </span>
+                    Forgot password?
+                  </Link>
                 </div>
               </div>
 
